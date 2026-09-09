@@ -12,7 +12,7 @@ st.markdown(f"""<style>
 </style>
     """,unsafe_allow_html=True)
 st.logo("KASH.png")
-mydb=mysql.connector.connect(host="gateway01.ap-southeast-1.prod.aws.tidbcloud.com",user="3H2mjs7CfMervzJ.root",passwd="Fv4brMEy3BcvR4xa")
+mydb=mysql.connector.connect(host="gateway01.ap-southeast-1.prod.aws.tidbcloud.com",user="3H2mjs7CfMervzJ.root",passwd="Fv4brMEy3BcvR4xa",ssl_ca='isrgrootx1.pem',ssl_verify_cert=True,use_pure=True)
 mycursor=mydb.cursor()
 mycursor.execute("USE KASH")
 if "enter_war" not in st.session_state:
