@@ -10,7 +10,7 @@ st.markdown(f"""<style>
     }}
 </style>
     """,unsafe_allow_html=True)
-mydb=mysql.connector.connect(host="localhost",user="root",password="1708")
+mydb=mysql.connector.connect(host="gateway01.ap-southeast-1.prod.aws.tidbcloud.com",user="3H2mjs7CfMervzJ.root",password="Fv4brMEy3BcvR4xa")
 mycursor=mydb.cursor()
 mycursor.execute("CREATE DATABASE IF NOT EXISTS KASH")
 mydb.commit()
