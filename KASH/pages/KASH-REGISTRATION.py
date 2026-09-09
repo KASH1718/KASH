@@ -10,7 +10,7 @@ st.markdown(f"""<style>
     }}
 </style>
     """,unsafe_allow_html=True)
-mydb=mysql.connector.connect(host=st.secrets['mysql']['host'],port=st.secrets['mysql']['port'],user=st.secrets['mysql']['user'],password=st.secrets['mysql']['pass'])
+mydb=mysql.connector.connect(host=st.secrets['mysql']['host'],port=st.secrets['mysql']['port'],user=st.secrets['mysql']['user'],password=st.secrets['mysql']['pass'],ssl_ca='isrgrootx1.pem',ssl_verify_cert=True,use_pure=True)
 mycursor=mydb.cursor()
 mycursor.execute("CREATE DATABASE IF NOT EXISTS KASH")
 mydb.commit()
