@@ -11,7 +11,7 @@ st.markdown(f"""<style>
         }}
     </style>
         """, unsafe_allow_html=True)
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="1708", database="KASH")
+mydb = mysql.connector.connect(host=st.secrets['mysql']['host'],port=st.secrets['mysql']['port'],user=st.secrets['mysql']['user'],password=st.secrets['mysql']['pass'],ssl_ca='isrgrootx1.pem', database="KASH")
 mycursor = mydb.cursor()
 st.logo("KASH.png")
 if "logged_ins" not in st.session_state:
