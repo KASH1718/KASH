@@ -105,7 +105,7 @@ def war(sid,name):
         st.session_state.war_sub=war
     st.divider()
     if war:
-        war_sub=(st.session_state.war_sub.lower(),)
+        war_sub=(st.session_state.war_sub,)
         q="SHOW TABLES" 
         mycursor.execute(q)
         t=mycursor.fetchall()
