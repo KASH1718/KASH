@@ -194,9 +194,12 @@ def war(sid,name):
                             st.session_state.star_rank = False
                             st.rerun()
             else:
-                st.warning("WAR HAS CEASED OR ALREADY ATTEMPTED")
+                if ch[0]==1:
+                    st.warning("WAR ALREADY ATTEMPTED")
+                elif ch[0]==-1:
+                    st.warning("WAR DOES NOT DECLARED OR CEASED")
         else:
-            st.warning("WAR DOES NOT CRAETED")
+            st.warning("WAR DOES NOT EXIST")
     else:
         st.warning("PLEASE ENTER SUBJECT TO ENTER WAR")
 def enter_war(name,sid):
