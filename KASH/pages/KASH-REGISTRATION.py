@@ -100,7 +100,7 @@ with col1:
             with st.form("STUDENT_REGISTER",clear_on_submit=True):
                 r_n=st.text_input("ENTER YOUR NAME")
                 r_c=st.text_input("ENTER YOUR CLASS NAME")
-                r_a=st.text_input("ENTER STUDENT ID")
+                r_a=st.text_input("ENTER STUDENT ID eg.23GA056")
                 r_s=st.selectbox("STREAM",["CS-MATH","BIO-MATH","BIO-CS"],index=None,placeholder="ENTER YOUR STREAM")
                 r_p=st.text_input("ENTER YOUR PASSWORD",type="password")
                 r_cp=st.text_input("CONFIRM YOUR PASSWORD",type="password")
