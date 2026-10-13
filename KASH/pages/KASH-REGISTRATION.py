@@ -144,7 +144,7 @@ with col1:
                                 n=mycursor.fetchall()
                                 c=0
                                 for i in range(len(n)):
-                                    if adno==i[2]:
+                                    if r_a==i[2]:
                                         c=1
                                 if c==0:
                                     q="INSERT INTO STUDENT(NAME,CLASS,ADNO,STREAM,PASSWORD) VALUES{}"
