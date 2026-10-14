@@ -37,10 +37,10 @@ elif a==4:
                                                                                                 - Thomas Edison</marquee>""",unsafe_allow_html=True)
 elif a==5:
     st.markdown("""<marquee>The harder I work, the more luck I seem to have.
-                                                    — Thomas Jefferson</marquee>""",unsafe_allow_html=True)
+                                                    - Thomas Jefferson</marquee>""",unsafe_allow_html=True)
 elif a==6:
     st.markdown("""<marquee>The important thing is to never stop questioning.
-                                       — Albert Einstein</marquee>""",unsafe_allow_html=True)
+                                       - Albert Einstein</marquee>""",unsafe_allow_html=True)
 def sa():
     st.divider()
     col1,col2,col3=st.columns(3)
