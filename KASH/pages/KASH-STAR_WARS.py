@@ -171,7 +171,7 @@ def war(sid,name):
                         for i in range(1,11):
                             a=st.radio(f"ENTER OPTION FOR QUESTION {i}",["A","B","C","D"],index=None,horizontal=True)
                             ans.append(a)
-                        submitted=st.form_submit_button("ATTCAK")
+                        submitted=st.form_submit_button("ATTACK")
                         if submitted and len(ans)==10:
                             if st.session_state.war_sub=="PHYSICS":
                                 col="KPQ"
