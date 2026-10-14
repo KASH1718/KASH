@@ -14,7 +14,7 @@ st.image("KASH.png",width=1080)
 st.logo("KASH.png")
 st.markdown("""
 <center><h1>KASH</h1>
-        <h4>Knowledge Analysing Star Hatcher</h4>
+        <h4>Knowledge Analyzing Star Hatcher</h4>
 </center>
 """,unsafe_allow_html=True)
 st.divider()
