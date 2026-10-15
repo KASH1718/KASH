@@ -36,7 +36,7 @@ def register(stream,adno):
         mydb.commit()
     elif stream=="BIO-MATH":
         mycursor.execute("USE BIOMATH")
-        qc="""CREATE TABLE IF NOT EXISTS{}(
+        qc="""CREATE TABLE IF NOT EXISTS {}(
                 PHY INT,
                 CHEM INT,
                 MATH INT,
